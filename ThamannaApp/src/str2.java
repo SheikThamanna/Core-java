@@ -15,7 +15,7 @@ public class str2 {
       System.out.println(s1==s2);//false
       System.out.println(s1.toUpperCase());//JAVA
       System.out.println(s1.toLowerCase());//java
-      System.out.println("\n\r\t  udayam\tKhathry\n\f" .trim());
+      System.out.println("\n\r\t  udayam\tKhathry\n\f" .trim());//udayam khathry
       
 	}
 
