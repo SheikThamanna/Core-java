@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Collection;
-
+import java.util.Set;
 public class MapExample2 {
 public static void main(String[] args) {
 		
@@ -14,10 +14,14 @@ public static void main(String[] args) {
 	     MyDetails.put("PassWord","##99&&");
 	     MyDetails.put("DOB","20/04/1976");
 	     MyDetails.put("Gender","Female");
-	     Collection<String> values=MyDetails.values();
-	     for(String value:values) {
-	    	 System.out.println(value);
+			/*
+			 * Collection<String> values=MyDetails.values(); for(String value:values) {
+			 * System.out.println(value); }
+			 */
+	     Set<String> keys=MyDetails.keySet();
+	     for(String key:keys) {
+	    	 System.out.println(key + " : "+ MyDetails.get(key));
 	     }
-
+	     
 }
 }
